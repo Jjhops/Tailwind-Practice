@@ -1,3 +1,179 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+    @apply relative px-4 py-4 flex justify-between items-center
+}
+
+.logo {
+    @apply uppercase text-white text-2xl font-bold leading-none
+}
+
+.burger {
+    @apply lg:hidden
+}
+
+.burger__svg {
+   @apply block h-4 w-4 fill-current
+}
+
+.menu {
+    @apply hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6
+}
+
+.menu__item-link {
+    @apply text-gray-400 hover:text-white
+}
+
+.menu__item-svg {
+    @apply text-gray-300
+}
+
+.menu__btn1 {
+    @apply hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-300 hover:bg-gray-50 text-sm text-gray-900 font-bold  rounded-xl transition duration-200
+}
+
+.menu__btn2 {
+    @apply hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200
+}
+
+.burger__header {
+   @apply flex items-center mb-8
+}
+
+.navbar__close-img {
+    @apply h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500
+}
+
+.burger__item-link {
+    @apply block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded
+}
+
+.burger__btn1 {
+    @apply block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl 
+}
+
+.burger__btn2 {
+    @apply block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl
+}
+
+.breadcrumbs__item-title {
+    @apply dark:text-slate-400 dark:hover:text-slate-200 text-gray-500 hover:text-gray-900 transition-all duration-200
+}
+
+.breadcrumbs__item-symbol {
+    @apply mx-2 text-gray-300
+}
+
+.banner {
+    @apply w-full lg:w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden shadow-lg dark:hover:shadow-gray-500 transition-all duration-200
+}
+
+.banner__gradient {
+    @apply absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70
+}
+
+.banner__img {
+    @apply absolute left-0 top-0 w-full h-full z-0 object-cover
+}
+
+.banner__frame {
+    @apply p-4 absolute bottom-0 left-0 z-20
+}
+
+.banner__frame-title {
+    @apply text-4xl font-semibold text-gray-100 leading-tight
+}
+
+.content {
+    @apply block w-full lg:flex mb-10 shadow-sm shadow-indigo-600 rounded-r-md hover:shadow-indigo-400
+}
+
+.content__item-title {
+    @apply dark:text-slate-200 mb-2 text-gray-700 font-bold text-2xl
+}
+
+.content__item-text {
+    @apply dark:text-slate-200 text-gray-700
+}
+
+.content__item-img {
+    @apply w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4
+}
+
+.pagination__item {
+    @apply dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-gray-700 inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all duration-200
+}
+
+.pagination__item-active {
+    @apply dark:text-white inline-block py-1 px-3 border border-gray-300 text-white bg-purple-800
+}
+
+.frames {
+    @apply w-full md:w-1/2 lg:w-full my-5
+}
+
+.topics__title {
+    @apply dark:text-slate-200 font-bold text-lg uppercase text-gray-700
+}
+
+.topics__item {
+    @apply px-1 py-4 border-y border-gray-500 hover:border-white
+}
+
+.topics__item-link {
+    @apply dark:text-slate-200 flex items-center text-gray-600
+}
+
+.topics__item-span1 {
+    @apply inline-block w-4 h-4 mr-3
+}
+
+.topics__item-span2 {
+    @apply text-gray-500 ml-auto
+}
+
+.divider {
+    @apply border border-dotted md:hidden lg:block
+}
+
+.subscribe__title {
+    @apply dark:text-slate-200 font-bold text-lg uppercase text-gray-700
+} 
+
+.subscribe__text {
+    @apply text-gray-600 mb-4
+}
+
+.footer__block-title {
+    @apply dark:text-slate-200 font-semibold text-gray-700 mb-3
+}
+
+.footer__block-item {
+    @apply dark:text-slate-500 dark:decoration-slate-200 inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2 hover:text-gray-900 transition-all duration-200
+}
+
+.btn {
+    @apply dark:text-slate-200 px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-200
+}
+
+.input {
+    @apply dark:text-slate-200 text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600 focus:outline-none focus:ring focus:ring-violet-300 transition-all duration-200
+}
+
+.user {
+    @apply flex mt-3
+}
+
+.user__img {
+    @apply h-10 w-10 rounded-full mr-2 object-cover
+}
+
+.user__text {
+    @apply font-semibold text-gray-400 text-sm
+}
+
+.user__data {
+    @apply text-gray-400 text-xs
+}

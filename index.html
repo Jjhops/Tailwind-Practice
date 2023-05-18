@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +7,309 @@
     <link rel="stylesheet" href="/public/styles.css">
     <title>Tailwind Css</title>
 </head>
-<body>
-    <!-- Header -->
-    <header class="px-2 border-b">
-        <a class="uppercase font-bold text-purple-800" href="">AstroLife</a>
-        <nav>
-            <ul class="text-gray-500 font-semibold">
-                <li><a class="inline-block py-3 px-2" href="">Home</a></li>
-                <li><a class="inline-block py-3 px-2" href="">About</a></li>
-                <li><a class="inline-block py-3 px-2" href="">Contact</a></li>
-            </ul>
+<body class="bg-white dark:bg-slate-900">
+    <div class="max-w-screen-xl mx-auto">
+            <!-- Header -->
+    <nav class="header">
+        <a class="logo" href="#">
+            AstroNews
+        </a>
+        <div class="burger">
+            <button class="navbar-burger text-blue-600">
+                <svg class="burger__svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="menu">
+            <li><a class="menu__item-link" href="#">Home</a></li>
+            <li class="menu__item-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="menu__item-link" href="#">About Us</a></li>
+            <li class="menu__item-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="menu__item-link" href="#">Contact</a></li>
+        </ul>
+        <a class="menu__btn1" href="#">Sign In</a>
+        <a class="menu__btn2" href="#">Sign up</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg- border-r overflow-y-auto dark:bg-slate-900">
+            <div class="burger__header">
+                <a class="logo mr-auto" href="#">
+                    AstroNews
+                </a>
+                <button class="navbar-close">
+                    <svg class="navbar__close-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="burger__item-link" href="#">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="burger__item-link" href="#">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="burger__item-link" href="#">Services</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="burger__item-link" href="#">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="burger__item-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="burger__btn1" href="#">Sign in</a>
+                    <a class="burger__btn2" href="#">Sign Up</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Copyright © 2023</span>
+                </p>
+            </div>
         </nav>
-    </header>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="px-2 flex items-center">
+        <div class="py-2 overflow-auto whitespace-nowrap flex items-center">
+            <a href="#" class="breadcrumbs__item-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>                      
+            </a>
+            <span class="breadcrumbs__item-symbol">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>                      
+            </span>
+            <a href="#" class="breadcrumbs__item-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                </svg>                      
+            </a>
+            <span class="breadcrumbs__item-symbol">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>                      
+            </span>
+            <a href="#" class="breadcrumbs__item-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                </svg>                      
+            </a>
+        </div>
+    </div>
+
+    <!-- Banners -->
+    <section class="px-2 lg:flex lg:space-x-2">
+        <a class="banner" href="">
+        <div class="banner__gradient"></div>
+            <img class="banner__img" src="/public/images/img-1.jpg" alt="news">
+            <div class="banner__frame">
+                <h2 class="banner__frame-title">
+                    Erdogan did not win the first round of the presidential elections.
+                </h2>
+                <div class="user">
+                    <img class="user__img" src="./public/images/img-6.jpg" alt="">
+                    <div>
+                        <p class="user__text">Vadim Iskakov</p>
+                        <time class="user__data">18 May</time>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="banner" href="">
+            <div class="banner__gradient"></div>
+            <img class="banner__img" src="/public/images/img-2.jpg" alt="news">
+            <div class="banner__frame">
+                <h2 class="banner__frame-title">
+                    "School uniforms make them cuter"
+                </h2>
+                <div class="user">
+                    <img class="user__img" src="./public/images/img-7.jpg" alt="">
+                    <div>
+                        <p class="user__text">Anna Sidorona</p>
+                        <time class="user__data">2 May</time>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
     <!-- Main -->
-    <main>
-        <div class="py-2 overflow-auto whitespace-nowrap">
-            <a href="#" class="text-gray-500">Home</a>
-            <span class="mx-2 text-gray-500">&gt;</span>
-            <a href="#" class="text-gray-500">News</a>
-            <span class="mx-2 text-gray-500">&gt;</span>
-            <a href="#" class="text-gray-500">Tech</a>
+    <main class="lg:flex">
+        <div class="w-full lg:w-2/3">
+        <!-- Content -->
+            <section class="px-2">
+            <a class="content" href="">
+                <img class="content__item-img" src="/public/images/img-3.jpg" alt="">
+                <div class="flex">
+                    <div>
+                        <h3 class="content__item-title">Russian investors were able to return assets worth three trillion rubles</h3>
+                        <p class="content__item-text">The head of the Central Bank Nabiullina announced the restoration of the rights of Russian investors for 3 trillion rubles</p>
+                        <div class="user">
+                            <img class="user__img" src="./public/images/img-8.jpg" alt="">
+                            <div>
+                                <p class="user__text">Anton Vashenko</p>
+                                <time class="user__data">29 April</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="content" href="">
+                <img class="content__item-img" src="/public/images/img-4.jpg" alt="">
+                <div class="flex">
+                    <div>
+                        <h3 class="content__item-title">USA to provide additional aid to Taiwan</h3>
+                        <p class="content__item-text">Pentagon chief Austin: USA will provide additional defense assistance to Taiwan</p>
+                        <div class="user">
+                            <img class="user__img" src="./public/images/img-9.jpg" alt="">
+                            <div>
+                                <p class="user__text">Ellen Fedorova</p>
+                                <time class="user__data">12 May</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="content" href="">
+                <img class="content__item-img" src="/public/images/img-5.jpg" alt="">
+                <div class="flex">
+                    <div>
+                        <h3 class="content__item-title">The United States declared its unwillingness to wage a cold war with China</h3>
+                        <p class="content__item-text">Secretary Blinken says US does not want conflict or new Cold War with China</p>
+                        <div class="user">
+                            <img class="user__img" src="./public/images/img-10.jpg" alt="">
+                            <div>
+                                <p class="user__text">Rinat Radickov</p>
+                                <time class="user__data">1 May</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </section>
+
+        <!-- Pagination -->
+            <div class="mt-20 mb-10">
+                <ul class="flex justify-center">
+                    <li><a class="pagination__item rounded-l-lg" href="">Previos</a></li>
+                    <li><a class="pagination__item" href="">1</a></li>
+                    <li><a class="pagination__item" href="">2</a></li>
+                    <li><a class="pagination__item" href="">3</a></li>
+                    <li><a class="pagination__item rounded-r-lg" href="">Next</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0">
+            <!-- Topics -->
+            <div class="frames">
+                <h5 class="topics__title">Popular News</h5>
+                <ul>
+                    <li class="topics__item">
+                        <a href="" class="topics__item-link">
+                            <span class="topics__item-span1 bg-gradient-to-tr from-green-500 to-green-700"></span>
+                            Vue
+                            <span class="topics__item-span2">23 articles</span>
+                        </a>
+                    </li>
+                    <li class="topics__item">
+                        <a href="" class="topics__item-link">
+                            <span class="topics__item-span1 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
+                            Swelte
+                            <span class="topics__item-span2">20 articles</span>
+                        </a>
+                    </li>
+                    <li class="topics__item">
+                        <a href="" class="topics__item-link">
+                            <span class="topics__item-span1 bg-gradient-to-tr from-red-500 to-red-700"></span>
+                            Angular
+                            <span class="topics__item-span2">15 articles</span>
+                        </a>
+                    </li>
+                    <li class="topics__item">
+                        <a href="" class="topics__item-link">
+                            <span class="topics__item-span1 bg-gradient-to-tr from-blue-500 to-blue-700"></span>
+                            React
+                            <span class="topics__item-span2">7 articles</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="frames">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Subscribe -->
+                <div class="my-5 md:my-0 lg:my-5">
+                    <h5 class="subscribe__title">Subscribe</h5>
+                    <p class="subscribe__text">Subscribe to our newsletter.</p>
+                    <input placeholder="your email address" type="email" class="input"></input>
+                    <button class="btn">Subscribe</button>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Footer -->
     <footer class="border-t mt-10 py-10 px-2">
-        <div>
-            <div>
-                <h6 class="font-semibold text-gray-700">Company</h6>
+        <div class="md:flex">
+            <div class="w-full mb-5 md:w-2/5">
+                <h6 class="footer__block-title">Company</h6>
                 <ul>
-                    <li><a class="inline-block text-gray-500 py-2" href="#">Team</a></li>
-                    <li><a class="inline-block text-gray-500 py-2" href="#">About us</a></li>
+                    <li><a class="footer__block-item" href="#">Team</a></li>
+                    <li><a class="footer__block-item" href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="w-full mb-5 md:w-2/5">
+                <h6 class="footer__block-title">Content</h6>
+                <ul>
+                    <li><a class="footer__block-item" href="#">Block</a></li>
+                    <li><a class="footer__block-item" href="#">Policy</a></li>
+                    <li><a class="footer__block-item" href="#">Documents</a></li>
+                </ul>
+            </div>
+            <div class="w-full mb-5 md:w-1/5">
+                <h6 class="footer__block-title">Contact us</h6>
+                <ul class="flex">
+                    <li class="mr-2"><a class="footer__block-item hover:text-slate-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                            <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                        </svg>                          
+                    </a></li>
+                    <li class="mr-2"><a class="footer__block-item hover:text-slate-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>                          
+                    </a></li>
+                    <li><a class="footer__block-item hover:text-slate-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>                          
+                    </a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    </div>
+    <script src="./public/scripts.js"></script>
 </body>
 </html>
