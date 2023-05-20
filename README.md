@@ -11,8 +11,8 @@ It's web-site which I made while I was learning framework, I guess it's more com
 
 
 ## Fast start
-Clone repository
-Go to the project folder
-Install dependencies: yarn install
-Start building the CCS file: yarn build
-Open index.html in browser
+- Клонируйте репозиторий
+- Перейдите в папку с проектом
+- Установите зависимости: `yarn install`
+- Запустите сборку СCS файл: `yarn build`
+- Откройте `index.html` в браузере
