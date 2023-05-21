@@ -7,7 +7,7 @@
 }
 
 .logo {
-    @apply uppercase text-white text-2xl font-bold leading-none
+    @apply text-black uppercase text-2xl font-bold leading-none 
 }
 
 .burger {
@@ -23,7 +23,7 @@
 }
 
 .menu__item-link {
-    @apply text-gray-400 hover:text-white
+    @apply text-gray-400 hover:text-gray-900 transition duration-200
 }
 
 .menu__item-svg {
@@ -31,7 +31,7 @@
 }
 
 .menu__btn1 {
-    @apply hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-300 hover:bg-gray-50 text-sm text-gray-900 font-bold  rounded-xl transition duration-200
+    @apply hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-gray-200 text-sm text-gray-900 font-bold  rounded-xl transition duration-200
 }
 
 .menu__btn2 {
@@ -43,7 +43,7 @@
 }
 
 .navbar__close-img {
-    @apply h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500
+    @apply h-6 w-6 text-black cursor-pointer
 }
 
 .burger__item-link {
@@ -51,15 +51,15 @@
 }
 
 .burger__btn1 {
-    @apply block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl 
+    @apply block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-100 hover:bg-gray-400 rounded-xl 
 }
 
 .burger__btn2 {
-    @apply block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl
+    @apply block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl
 }
 
 .breadcrumbs__item-title {
-    @apply dark:text-slate-400 dark:hover:text-slate-200 text-gray-500 hover:text-gray-900 transition-all duration-200
+    @apply text-gray-500 hover:text-gray-900 transition-all duration-200
 }
 
 .breadcrumbs__item-symbol {
@@ -87,15 +87,15 @@
 }
 
 .content {
-    @apply block w-full lg:flex mb-10 shadow-sm shadow-indigo-600 rounded-r-md hover:shadow-indigo-400
+    @apply block w-full lg:flex mb-10 shadow-md shadow-indigo-400 rounded-r-md hover:shadow-lg hover:shadow-indigo-600 transition duration-200
 }
 
 .content__item-title {
-    @apply dark:text-slate-200 mb-2 text-gray-700 font-bold text-2xl
+    @apply mb-2 text-black font-bold text-2xl
 }
 
 .content__item-text {
-    @apply dark:text-slate-200 text-gray-700
+    @apply text-gray-500
 }
 
 .content__item-img {
@@ -115,15 +115,15 @@
 }
 
 .topics__title {
-    @apply dark:text-slate-200 font-bold text-lg uppercase text-gray-700
+    @apply font-bold text-lg uppercase text-black
 }
 
 .topics__item {
-    @apply px-1 py-4 border-y border-gray-500 hover:border-white
+    @apply px-1 py-4 border-y border-gray-200 hover:border-black
 }
 
 .topics__item-link {
-    @apply dark:text-slate-200 flex items-center text-gray-600
+    @apply flex items-center text-black
 }
 
 .topics__item-span1 {
@@ -139,7 +139,7 @@
 }
 
 .subscribe__title {
-    @apply dark:text-slate-200 font-bold text-lg uppercase text-gray-700
+    @apply font-bold text-lg uppercase text-black
 } 
 
 .subscribe__text {
@@ -147,11 +147,11 @@
 }
 
 .footer__block-title {
-    @apply dark:text-slate-200 font-semibold text-gray-700 mb-3
+    @apply font-semibold text-gray-700 mb-3
 }
 
 .footer__block-item {
-    @apply dark:text-slate-500 dark:decoration-slate-200 inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2 hover:text-gray-900 transition-all duration-200
+    @apply inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2 hover:text-gray-900 transition-all duration-200
 }
 
 .btn {
