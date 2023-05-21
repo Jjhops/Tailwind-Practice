@@ -8,3 +8,11 @@ It's web-site which I made while I was learning framework, I guess it's more com
 3. JavaScript
 4. Yarn
 5. Live Server
+
+
+## Fast start
+- Clone the repository
+- Go to the project folder
+- Install dependencies: `yarn install`
+- Start building the CSS file: `yarn build`
+- Open `index.html` in browser
