@@ -1,6 +1,6 @@
 # Tailwind Practice
  
-It's web-site which I made while I was learning framework, I guess it's more comfortoble than bootstrap and I going to use this in next works
+This is a site I made while I was learning the Tailwindcss framework, I think it's more user friendly than bootstrap and I'm going to use it in the following works
 
 ## What I used
 1. HTML
